@@ -1,4 +1,3 @@
-@media screen and (max-width: 481px){
 
 p{	
 font-family: Times New Roman;
@@ -70,5 +69,4 @@ opacity: 0.4;
 
 #submit:hover{
 opacity: 1.0;
-}
 }
