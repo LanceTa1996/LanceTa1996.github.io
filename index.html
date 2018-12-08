@@ -10,25 +10,8 @@
 
 <script src = "jscode.js"> </script>
 
-<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwMNcMWO_IFh_HH_ivfax5RoCCseKx-sohfqYHJtBQTsP66RV6i/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-	
-	
 </head>
-	
+
 <body>
 
 <h1> Lance's Test Schedule Form </h1>
@@ -36,23 +19,23 @@
 
 <p> Please fill this form out for my little sister's stats project. Don't forget to click the <b class = "submit">submit button</b> at the bottom of the form. </p> 
 
-<form action = "" method = "" onsubmit = "submit1()">
+<form id="test-form" action = "https://script.google.com/macros/s/AKfycbysoE7dFRwvTT3q_FmTNvAbo0YR_qci-s83Qetc33M8BSfjVZgw/exec" method = "get">
 <fieldset>
 	Enter your first name, last name and your date of birth. </br>
 	<label for="firstname">First Name:</label>
-	<input type = "text" id = "firstname" name = "firstname" required> 
+	<input type = "text" id = "firstname" name = "Firstname" required> 
 	<label for="lastname">Last Name:</label>
-	<input type = "text"id = "lastname" name = "lastname" required> 
+	<input type = "text"id = "lastname" name = "Lastname" required> 
 	<label for="dateofbirth">Date of Birth:</label>
-	<input type = "date"id = "birthdate" value = "day" name = "birthdate" required> </br>
+	<input type = "date"id = "birthdate" value = "day" name = "Birthdate" required> </br>
 
 	<hr>
 	
 	Am I friends with you on Facebook? </br>
 	Yes:
-	<input type = "radio" id = "yesorno"name = "yesorno" value = "yes" required> </br>
+	<input type = "radio" id = "yesorno"name = "Friend?" value = "yes" required> </br>
 	No:
-	<input type = "radio" id = "yesorno" name = "yesorno" value = "no" required> </br>
+	<input type = "radio" id = "yesorno" name = "Friend?" value = "no" required> </br>
 	<hr>
 	
 	<div id = "main1">
