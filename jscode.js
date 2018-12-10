@@ -10,6 +10,7 @@ function add_date1(){
 
 }
 
+
 function add_date2(){
 
 	var x = document.createElement("INPUT");
@@ -41,14 +42,6 @@ function add_date5(){
 	document.getElementById("main5").appendChild(x);
 
 }
-
-
-
-
-
-
-
-
 
 function add_date_btn(){
 	
