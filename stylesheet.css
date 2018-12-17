@@ -39,8 +39,8 @@ margin-left: 50px;
 }
 
 body{
-background-color: gray;
-background-image: url(watermelon.jpg)
+background-image: url(watermelon3.jpg);
+background-size: cover;
 }
 
 #submit{
